@@ -1,0 +1,38 @@
+{
+  "name": "node-homey-config-composer",
+  "version": "1.0.0",
+  "description": "Config utility for Homey apps",
+  "main": "index.js",
+  "bin": {
+    "homeyConfig": "bin/homeyConfig.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "fs-extra": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Homey",
+    "tools"
+  ],
+  "author": "Bas Kiers",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 4.x"
+  },
+  "engineStrict": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BasKiers/node-homey-config-composer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BasKiers/node-homey-config-composer/issues"
+  },
+  "homepage": "https://github.com/BasKiers/node-homey-config-composer#readme"
+}
