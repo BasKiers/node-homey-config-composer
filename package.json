@@ -1,6 +1,6 @@
 {
   "name": "node-homey-config-composer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Config utility for Homey apps",
   "main": "index.js",
   "bin": {
