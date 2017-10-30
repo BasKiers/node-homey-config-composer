@@ -18,6 +18,17 @@ config/
             socketA/
                 whenOff.js
             socketB.js
+    signals/
+        433/
+            somfy.js
+    locales/
+        en/
+            pair.js
+            settings.json
+        nl.js // Locales files are merged into locales/[lang].json and suffixed with an empty character "\u0000". 
+              // If there is a collision with an entry in locales/[lang].json without the "\u0000" suffix the key will not be overwritten by the config parser.
+    config.js // This file will be merged with the app.json file before all other files/folders are merged
+    scripts.js // This file can export a function that is called with the merged config at the end and can make changes before writing to app.json
 app.json
 ```
 
@@ -28,8 +39,10 @@ drivers
 flow/triggers
 flow/conditions
 flow/actions
+signals
 screensavers
 speech
+locales
 ```
 
 The files inside these folders should contain an Object (e.g. the config for one device) or an Array of such Objects.
